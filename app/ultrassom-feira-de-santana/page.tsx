@@ -12,7 +12,6 @@ export default function UltrassomPage() {
     "Ultrassom de mama",
     "Ultrassom de tireoide",
     "Ultrassom obstétrico",
-    "Ultrassom morfológico",
   ]
 
   const benefits = [
@@ -30,7 +29,7 @@ export default function UltrassomPage() {
     },
     {
       title: "Preço Acessível",
-      description: "Exames a partir de R$ 80",
+      description: "Consultas a partir de R$ 70 Reais",
     },
   ]
 
@@ -165,7 +164,13 @@ export default function UltrassomPage() {
             <div className="relative">
               <div className="bg-[#008b47] text-white p-8 rounded-lg">
                 <div className="flex justify-center mb-6">
-                  <Activity className="h-16 w-16" />
+                <Image
+                    src="/ultrassom.png"
+                    alt="Ortopedia"
+                    width={64}
+                    height={64}
+                    className="object-contain"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-center">Por que fazer ultrassom?</h3>
                 <ul className="space-y-3">
@@ -234,7 +239,7 @@ export default function UltrassomPage() {
                   Avalia fígado, vesícula biliar, pâncreas, rins, baço e grandes vasos abdominais. Ideal para
                   diagnóstico de cálculos, cistos e alterações nos órgãos.
                 </p>
-                <p className="font-semibold text-[#008b47]">A partir de R$ 120</p>
+              
               </CardContent>
             </Card>
             <Card className="bg-white text-gray-900">
@@ -244,7 +249,7 @@ export default function UltrassomPage() {
                   Avalia útero, ovários e outras estruturas pélvicas. Fundamental para diagnóstico de miomas, cistos
                   ovarianos, endometriose e outras condições ginecológicas.
                 </p>
-                <p className="font-semibold text-[#008b47]">A partir de R$ 100</p>
+               
               </CardContent>
             </Card>
             <Card className="bg-white text-gray-900">
@@ -254,7 +259,7 @@ export default function UltrassomPage() {
                   Acompanha o desenvolvimento do bebê durante a gestação, avaliando tamanho, posição, batimentos
                   cardíacos e outros parâmetros importantes.
                 </p>
-                <p className="font-semibold text-[#008b47]">A partir de R$ 100</p>
+               
               </CardContent>
             </Card>
             <Card className="bg-white text-gray-900">
@@ -264,7 +269,7 @@ export default function UltrassomPage() {
                   Complementa a mamografia na avaliação de nódulos e outras alterações mamárias. Especialmente útil para
                   mulheres jovens com mamas densas.
                 </p>
-                <p className="font-semibold text-[#008b47]">A partir de R$ 100</p>
+              
               </CardContent>
             </Card>
           </div>
@@ -277,7 +282,7 @@ export default function UltrassomPage() {
         </div>
       </section>
 
-      {/* Tecnologia Section */}
+      {/* Tecnologia Section 
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -326,7 +331,7 @@ export default function UltrassomPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Testimonials Section */}
       <section className="py-16 px-4 bg-gray-50">

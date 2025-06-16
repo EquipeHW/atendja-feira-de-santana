@@ -17,10 +17,16 @@ import {
   Bone,
   Activity,
   UserCheck,
+  UserRound,
+  Scan,
+  BoneIcon,
+  CircleDot,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
+import { CarouselWithAutoplay } from "@/components/carousel-with-autoplay"
 
 export default function HomePage() {
   const specialties = [
@@ -41,28 +47,28 @@ export default function HomePage() {
     {
       title: "Ginecologia",
       description: "Cuidados especializados em saúde da mulher",
-      icon: UserCheck,
+      image: "/ginecologista.png",
       href: "/ginecologista-feira-de-santana",
       color: "text-[#8dbf44]",
     },
     {
       title: "Ultrassom",
       description: "Exames de imagem para diagnósticos precisos",
-      icon: Activity,
+      image: "/ultrassom.png",
       href: "/ultrassom-feira-de-santana",
       color: "text-[#008b47]",
     },
     {
       title: "Ortopedia",
       description: "Tratamento de ossos, articulações e músculos",
-      icon: Bone,
+      image: "/ortopedia.png",
       href: "/ortopedista-feira-de-santana",
       color: "text-[#2ea55c]",
     },
     {
       title: "Dermatologia",
       description: "Cuidados especializados para a saúde da pele",
-      icon: Shield,
+      image: "/dermatologia.png",
       href: "/dermatologista-feira-de-santana",
       color: "text-[#8dbf44]",
     },
@@ -116,11 +122,11 @@ export default function HomePage() {
     {
       icon: DollarSign,
       title: "Preço Justo",
-      description: "Consultas a partir de R$ 150 e exames desde R$ 80",
+      description: "Consultas a partir de R$ 70 Reais",
     },
     {
       icon: Shield,
-      title: "Profissionais Reconhecidos",
+      title: "Profissionais Renomados",
       description: "Atendimento ético e comprometido na cidade",
     },
   ]
@@ -143,7 +149,7 @@ export default function HomePage() {
   const faqs = [
     {
       question: "Como funciona o atendimento?",
-      answer: "Presencial com agendamento via WhatsApp. Atendimento ágil e sem filas.",
+      answer: "Presencial com agendamento via WhatsApp e Telefone através do número (75) 3026‑8494. Atendimento ágil e sem filas.",
     },
     {
       question: "Trabalha com convênios?",
@@ -155,7 +161,7 @@ export default function HomePage() {
     },
     {
       question: "Qual o valor das consultas?",
-      answer: "Consultas a partir de R$ 150 e procedimentos desde R$ 80.",
+      answer: "Consultas a partir de R$ 70 Reais.",
     },
   ]
 
@@ -253,23 +259,30 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-8">
-            {specialties.map((specialty, index) => {
-              const IconComponent = specialty.icon
-              return (
-                <Link href={specialty.href} key={index}>
-                  <Card className="border-2 border-[#008b47] hover:shadow-lg transition-all h-full hover:-translate-y-1 cursor-pointer">
-                    <CardContent className="p-6 flex flex-col items-center text-center">
-                      <div className="bg-[#008b47] text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                        <IconComponent className="h-8 w-8" />
-                      </div>
-                      <h3 className="font-bold text-[#008b47] text-lg mb-2">{specialty.title}</h3>
-                      <p className="text-gray-600">{specialty.description}</p>
-                      <div className="mt-4 text-[#2ea55c] font-medium">Saiba mais →</div>
-                    </CardContent>
-                  </Card>
-                </Link>
-              )
-            })}
+            {specialties.map((specialty, index) => (
+              <Link href={specialty.href} key={index}>
+                <Card className="border-2 border-[#008b47] hover:shadow-lg transition-all h-full hover:-translate-y-1 cursor-pointer">
+                  <CardContent className="p-6 flex flex-col items-center text-center">
+                    <div className="bg-[#008b47] text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                      {specialty.image ? (
+                        <Image
+                          src={specialty.image}
+                          alt={specialty.title}
+                          width={32}
+                          height={32}
+                          className="object-contain"
+                        />
+                      ) : specialty.icon && (
+                        <specialty.icon className="h-8 w-8" />
+                      )}
+                    </div>
+                    <h3 className="font-bold text-[#008b47] text-lg mb-2">{specialty.title}</h3>
+                    <p className="text-gray-600">{specialty.description}</p>
+                    <div className="mt-4 text-[#2ea55c] font-medium">Saiba mais →</div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -296,17 +309,11 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="bg-white text-[#008b47] p-6 rounded-lg text-center max-w-4xl mx-auto mb-8">
-            <p className="text-lg font-medium">
-              <strong>Foco Especial:</strong> Ultrassons, exames cardíacos, preventivo e eletrocauterização são nossos
-              principais diferenciais.
-            </p>
-          </div>
-
+         
           <div className="text-center">
             <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
               <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
-                AGENDAR CONSULTA
+                AGENDAR EXAME
               </a>
             </Button>
           </div>
@@ -322,7 +329,14 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {differentials.map((item, index) => (
-              <div key={index} className="text-center bg-white p-6 rounded-lg shadow-sm">
+              <div 
+                key={index} 
+                className={`text-center bg-white p-6 rounded-lg shadow-sm ${
+                  index === differentials.length - 1 && differentials.length % 3 !== 0 
+                    ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' 
+                    : ''
+                }`}
+              >
                 <div className="bg-[#008b47] text-white p-4 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <item.icon className="h-8 w-8" />
                 </div>
@@ -382,54 +396,7 @@ export default function HomePage() {
               </Button>
             </div>
             <div className="relative w-full h-[400px]">
-              <Carousel>
-                <CarouselContent>
-                  <CarouselItem>
-                    <div className="relative w-full h-[400px]">
-                      <Image
-                        src="/images/feira1.webp"
-                        alt="Atendja Feira de Santana"
-                        width={800}
-                        height={400}
-                        className="object-cover rounded-lg"
-                      />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="relative w-full h-[400px]">
-                      <Image
-                        src="/images/feira2.webp"
-                        alt="Atendja Feira de Santana"
-                        width={800}
-                        height={400}
-                        className="object-cover rounded-lg"
-                      />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="relative w-full h-[400px]">
-                      <Image
-                        src="/images/feira3.webp"
-                        alt="Atendja Feira de Santana"
-                        width={800}
-                        height={400}
-                        className="object-cover rounded-lg"
-                      />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="relative w-full h-[400px]">
-                      <Image
-                        src="/images/feira4.webp"
-                        alt="Atendja Feira de Santana"
-                        width={800}
-                        height={400}
-                        className="object-cover rounded-lg"
-                      />
-                    </div>
-                  </CarouselItem>
-                </CarouselContent>
-              </Carousel>
+              <CarouselWithAutoplay />
             </div>
           </div>
         </div>

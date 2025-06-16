@@ -10,7 +10,6 @@ export default function GinecologistaPage() {
     "Papanicolau (preventivo)",
     "Inserção de DIU",
     "Colocação de Implanon (implante contraceptivo)",
-    "Colposcopia",
     "Ultrassonografia transvaginal",
     "Planejamento familiar",
   ]
@@ -30,7 +29,7 @@ export default function GinecologistaPage() {
     },
     {
       title: "Preço Acessível",
-      description: "Consultas a partir de R$ 150 e procedimentos desde R$ 80",
+      description: "Consultas a partir de R$ 70 Reais",
     },
   ]
 
@@ -158,14 +157,20 @@ export default function GinecologistaPage() {
               </p>
               <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
                 <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
-                  📱 Agende sua consulta ginecológica
+                   Agende sua consulta ginecológica
                 </a>
               </Button>
             </div>
             <div className="relative">
               <div className="bg-[#008b47] text-white p-8 rounded-lg">
                 <div className="flex justify-center mb-6">
-                  <UserCheck className="h-16 w-16" />
+                <Image
+                    src="/ginecologista.png"
+                    alt="Ortopedia"
+                    width={64}
+                    height={64}
+                    className="object-contain"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-center">Por que fazer acompanhamento ginecológico?</h3>
                 <ul className="space-y-3">
@@ -234,7 +239,7 @@ export default function GinecologistaPage() {
                   Exame fundamental para detecção precoce do câncer de colo do útero e outras alterações. Recomendado
                   anualmente para mulheres sexualmente ativas.
                 </p>
-                <p className="font-semibold text-[#008b47]">A partir de R$ 80</p>
+                
               </CardContent>
             </Card>
             <Card className="bg-white text-gray-900">
@@ -244,7 +249,7 @@ export default function GinecologistaPage() {
                   Método contraceptivo de longa duração, seguro e eficaz. Procedimento realizado em consultório com
                   profissionais experientes.
                 </p>
-                <p className="font-semibold text-[#008b47]">A partir de R$ 200</p>
+               
               </CardContent>
             </Card>
             <Card className="bg-white text-gray-900">
@@ -254,7 +259,7 @@ export default function GinecologistaPage() {
                   Implante contraceptivo subdérmico com duração de até 3 anos. Procedimento rápido e minimamente
                   invasivo.
                 </p>
-                <p className="font-semibold text-[#008b47]">A partir de R$ 250</p>
+             
               </CardContent>
             </Card>
             <Card className="bg-white text-gray-900">
@@ -264,14 +269,14 @@ export default function GinecologistaPage() {
                   Exame de imagem que avalia útero, ovários e outras estruturas pélvicas. Fundamental para diagnóstico
                   de diversas condições ginecológicas.
                 </p>
-                <p className="font-semibold text-[#008b47]">A partir de R$ 150</p>
+               
               </CardContent>
             </Card>
           </div>
 
           <div className="text-center mt-8">
             <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-              📱 Agende seu procedimento ginecológico
+               Agende seu procedimento ginecológico
             </Button>
           </div>
         </div>
@@ -347,7 +352,7 @@ export default function GinecologistaPage() {
             doenças ginecológicas.
           </p>
           <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-            📱 Agende sua consulta pelo WhatsApp
+             Agende sua consulta pelo WhatsApp
           </Button>
         </div>
       </section>

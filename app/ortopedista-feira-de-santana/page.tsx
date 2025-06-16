@@ -30,7 +30,7 @@ export default function OrtopedistaPage() {
     },
     {
       title: "Preço Acessível",
-      description: "Consultas a partir de R$ 150",
+      description: "Consultas a partir de R$ 70 Reais",
     },
   ]
 
@@ -189,7 +189,13 @@ export default function OrtopedistaPage() {
             <div className="relative">
               <div className="bg-[#008b47] text-white p-8 rounded-lg">
                 <div className="flex justify-center mb-6">
-                  <Bone className="h-16 w-16" />
+                  <Image
+                    src="/ortopedia.png"
+                    alt="Ortopedia"
+                    width={64}
+                    height={64}
+                    className="object-contain"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-center">Por que consultar um ortopedista?</h3>
                 <ul className="space-y-3">

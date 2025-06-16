@@ -30,7 +30,7 @@ export default function DermatologistaPage() {
     },
     {
       title: "Preço Acessível",
-      description: "Consultas a partir de R$ 150 e procedimentos desde R$ 80",
+      description: "Consultas a partir de R$ 70 Reais",
     },
   ]
 
@@ -189,7 +189,13 @@ export default function DermatologistaPage() {
             <div className="relative">
               <div className="bg-[#008b47] text-white p-8 rounded-lg">
                 <div className="flex justify-center mb-6">
-                  <Shield className="h-16 w-16" />
+                <Image
+                    src="/dermatologia.png"
+                    alt="Ortopedia"
+                    width={64}
+                    height={64}
+                    className="object-contain"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-center">Por que consultar um dermatologista?</h3>
                 <ul className="space-y-3">
@@ -302,7 +308,7 @@ export default function DermatologistaPage() {
                   <span className="text-gray-600">Anestesia local</span>
                 </div>
               </div>
-              <p className="font-semibold text-[#008b47] mt-4">A partir de R$ 80 por lesão</p>
+             
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm mb-8">
@@ -325,7 +331,7 @@ export default function DermatologistaPage() {
                   <span className="text-gray-600">Resultado estético</span>
                 </div>
               </div>
-              <p className="font-semibold text-[#008b47] mt-4">A partir de R$ 150 por lesão</p>
+              
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
@@ -348,7 +354,7 @@ export default function DermatologistaPage() {
                   <span className="text-gray-600">Mínima cicatriz</span>
                 </div>
               </div>
-              <p className="font-semibold text-[#008b47] mt-4">A partir de R$ 200 (não inclui análise laboratorial)</p>
+             
             </div>
           </div>
         </div>

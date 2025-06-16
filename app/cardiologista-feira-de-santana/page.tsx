@@ -30,7 +30,7 @@ export default function CardiologistaPage() {
     },
     {
       title: "Preço Acessível",
-      description: "Consultas a partir de R$ 150 e exames desde R$ 80",
+      description: "Consultas a partir de R$ 70 Reais",
     },
   ]
 
@@ -235,7 +235,7 @@ export default function CardiologistaPage() {
                   Exame que registra a atividade elétrica do coração, fundamental para diagnóstico de arritmias e outras
                   alterações cardíacas.
                 </p>
-                <p className="font-semibold text-[#008b47]">A partir de R$ 80</p>
+               
               </CardContent>
             </Card>
             <Card className="bg-white text-gray-900">
@@ -245,7 +245,7 @@ export default function CardiologistaPage() {
                   Monitoramento contínuo do coração por 24 horas, ideal para detectar arritmias intermitentes e avaliar
                   a eficácia de tratamentos.
                 </p>
-                <p className="font-semibold text-[#008b47]">A partir de R$ 150</p>
+                
               </CardContent>
             </Card>
             <Card className="bg-white text-gray-900">
@@ -255,7 +255,7 @@ export default function CardiologistaPage() {
                   Monitorização Ambulatorial da Pressão Arterial por 24 horas, essencial para diagnóstico e
                   acompanhamento da hipertensão.
                 </p>
-                <p className="font-semibold text-[#008b47]">A partir de R$ 150</p>
+              
               </CardContent>
             </Card>
             <Card className="bg-white text-gray-900">
@@ -265,7 +265,7 @@ export default function CardiologistaPage() {
                   Ultrassom do coração que avalia estrutura, função e fluxo sanguíneo, permitindo diagnóstico de
                   diversas cardiopatias.
                 </p>
-                <p className="font-semibold text-[#008b47]">A partir de R$ 200</p>
+             
               </CardContent>
             </Card>
           </div>

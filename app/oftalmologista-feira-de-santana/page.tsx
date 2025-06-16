@@ -30,7 +30,7 @@ export default function OftalmologistaPage() {
     },
     {
       title: "Preço Acessível",
-      description: "Consultas a partir de R$ 150",
+      description: "Consultas a partir de R$ 70 Reais",
     },
   ]
 

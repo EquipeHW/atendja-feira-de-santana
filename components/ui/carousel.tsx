@@ -1,24 +1,22 @@
 "use client"
 
 import * as React from "react"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react"
-import Autoplay from "embla-carousel-autoplay"
-import { ArrowLeft, ArrowRight } from "lucide-react"
-
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { buttonVariants } from "@/components/ui/button"
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>[0]
 
 interface CarouselProps {
   opts?: UseCarouselParameters
-  plugins?: Parameters<typeof useEmblaCarousel>[1]
+  plugins?: any[]
   orientation?: "horizontal" | "vertical"
   setApi?: (api: CarouselApi) => void
 }
 
-const CarouselContext = React.createContext<CarouselApi>(null!)
+const CarouselContext = React.createContext<CarouselApi | null>(null)
 
 function useCarousel() {
   const context = React.useContext(CarouselContext)
@@ -50,41 +48,8 @@ const Carousel = React.forwardRef<
       {
         ...opts,
         axis: orientation === "horizontal" ? "x" : "y",
-        loop: true,
       },
-      [...(plugins || []), Autoplay({ delay: 3000, stopOnInteraction: false })]
-    )
-    const [canScrollPrev, setCanScrollPrev] = React.useState(false)
-    const [canScrollNext, setCanScrollNext] = React.useState(false)
-
-    const onSelect = React.useCallback((api: CarouselApi) => {
-      if (!api) {
-        return
-      }
-
-      setCanScrollPrev(api.canScrollPrev())
-      setCanScrollNext(api.canScrollNext())
-    }, [])
-
-    const scrollPrev = React.useCallback(() => {
-      api?.scrollPrev()
-    }, [api])
-
-    const scrollNext = React.useCallback(() => {
-      api?.scrollNext()
-    }, [api])
-
-    const handleKeyDown = React.useCallback(
-      (event: React.KeyboardEvent<HTMLDivElement>) => {
-        if (event.key === "ArrowLeft") {
-          event.preventDefault()
-          scrollPrev()
-        } else if (event.key === "ArrowRight") {
-          event.preventDefault()
-          scrollNext()
-        }
-      },
-      [scrollPrev, scrollNext]
+      plugins
     )
 
     React.useEffect(() => {
@@ -95,26 +60,10 @@ const Carousel = React.forwardRef<
       setApi(api)
     }, [api, setApi])
 
-    React.useEffect(() => {
-      if (!api) {
-        return
-      }
-
-      onSelect(api)
-      api.on("select", onSelect)
-      api.on("reInit", onSelect)
-
-      return () => {
-        api.off("select", onSelect)
-        api.off("reInit", onSelect)
-      }
-    }, [api, onSelect])
-
     return (
       <CarouselContext.Provider value={api}>
         <div
           ref={ref}
-          onKeyDownCapture={handleKeyDown}
           className={cn("relative", className)}
           role="region"
           aria-roledescription="carousel"
@@ -122,28 +71,6 @@ const Carousel = React.forwardRef<
         >
           <div ref={carouselRef} className="overflow-hidden">
             <div className="flex">{children}</div>
-          </div>
-          <div className="flex items-center justify-center mt-4">
-            <Button
-              variant="outline"
-              size="icon"
-              className="h-8 w-8 rounded-full mr-2"
-              onClick={scrollPrev}
-              disabled={!canScrollPrev}
-            >
-              <ArrowLeft className="h-4 w-4" />
-              <span className="sr-only">Slide anterior</span>
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="h-8 w-8 rounded-full"
-              onClick={scrollNext}
-              disabled={!canScrollNext}
-            >
-              <ArrowRight className="h-4 w-4" />
-              <span className="sr-only">Próximo slide</span>
-            </Button>
           </div>
         </div>
       </CarouselContext.Provider>
@@ -158,7 +85,7 @@ const CarouselContent = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex", className)}
+    className={cn("relative", className)}
     {...props}
   />
 ))
@@ -170,17 +97,69 @@ const CarouselItem = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    role="group"
-    aria-roledescription="slide"
     className={cn("min-w-0 shrink-0 grow-0 basis-full", className)}
     {...props}
   />
 ))
 CarouselItem.displayName = "CarouselItem"
 
+interface CarouselButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: "default" | "outline" | "secondary" | "ghost" | "link"
+  size?: "default" | "sm" | "lg" | "icon"
+}
+
+const CarouselPrevious = React.forwardRef<
+  HTMLButtonElement,
+  CarouselButtonProps
+>(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  const { scrollPrev } = useCarousel()
+
+  return (
+    <button
+      ref={ref}
+      className={cn(
+        buttonVariants({ variant, size }),
+        "absolute h-8 w-8 -left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white/90",
+        className
+      )}
+      onClick={() => scrollPrev()}
+      {...props}
+    >
+      <ChevronLeft className="h-4 w-4" />
+      <span className="sr-only">Slide anterior</span>
+    </button>
+  )
+})
+CarouselPrevious.displayName = "CarouselPrevious"
+
+const CarouselNext = React.forwardRef<
+  HTMLButtonElement,
+  CarouselButtonProps
+>(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  const { scrollNext } = useCarousel()
+
+  return (
+    <button
+      ref={ref}
+      className={cn(
+        buttonVariants({ variant, size }),
+        "absolute h-8 w-8 -right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white/90",
+        className
+      )}
+      onClick={() => scrollNext()}
+      {...props}
+    >
+      <ChevronRight className="h-4 w-4" />
+      <span className="sr-only">Próximo slide</span>
+    </button>
+  )
+})
+CarouselNext.displayName = "CarouselNext"
+
 export {
-  type CarouselApi,
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
 }
