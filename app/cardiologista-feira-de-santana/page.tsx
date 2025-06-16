@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Heart, Phone, Star, CheckCircle, MapPin, Clock } from "lucide-react"
+import { Heart, Phone, Star, CheckCircle, MapPin, Clock, Stethoscope, Calendar, DollarSign } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -17,20 +17,24 @@ export default function CardiologistaPage() {
 
   const benefits = [
     {
-      title: "Diagnóstico Preciso",
-      description: "Equipamentos modernos para avaliação cardíaca completa",
+      title: "Profissionais Especializados",
+      description: "Equipe médica altamente qualificada e experiente em cardiologia",
+      icon: Stethoscope,
     },
     {
-      title: "Atendimento Rápido",
-      description: "Resultados de exames em até 24 horas",
+      title: "Agendamento Rápido",
+      description: "Marque sua consulta em até 24 horas, sem longas esperas",
+      icon: Calendar,
     },
     {
-      title: "Cardiologistas Experientes",
-      description: "Profissionais com ampla experiência clínica",
+      title: "Atendimento Ágil",
+      description: "Consultas com duração adequada e sem pressa",
+      icon: Clock,
     },
     {
-      title: "Preço Acessível",
-      description: "Consultas a partir de R$ 70 Reais",
+      title: "Preço Justo",
+      description: "Valores acessíveis para consultas e procedimentos",
+      icon: DollarSign,
     },
   ]
 
@@ -204,15 +208,18 @@ export default function CardiologistaPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="text-center bg-white p-6 rounded-lg shadow-sm">
-                <div className="bg-[#008b47] text-white p-4 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Heart className="h-8 w-8" />
+            {benefits.map((benefit, index) => {
+              const IconComponent = benefit.icon
+              return (
+                <div key={index} className="text-center bg-white p-6 rounded-lg shadow-sm">
+                  <div className="bg-[#008b47] text-white p-4 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <IconComponent className="h-8 w-8" />
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-3">{benefit.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{benefit.description}</p>
                 </div>
-                <h3 className="font-bold text-gray-900 mb-3">{benefit.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{benefit.description}</p>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>

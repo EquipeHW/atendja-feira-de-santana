@@ -41,7 +41,7 @@ export function CarouselWithAutoplay() {
           <div className="min-w-0 shrink-0 grow-0 basis-full">
             <div className="relative w-full h-[400px]">
               <Image
-                src="/images/feira3.webp"
+                src="/images/feira5.jpg"
                 alt="Atendja Feira de Santana"
                 width={800}
                 height={400}
@@ -49,6 +49,31 @@ export function CarouselWithAutoplay() {
               />
             </div>
           </div>
+
+          <div className="min-w-0 shrink-0 grow-0 basis-full">
+            <div className="relative w-full h-[400px]">
+              <Image
+                src="/images/feira6.jpeg"
+                alt="Atendja Feira de Santana"
+                width={800}
+                height={400}
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+
+          <div className="min-w-0 shrink-0 grow-0 basis-full">
+            <div className="relative w-full h-[400px]">
+              <Image
+                src="/images/feira7.jpeg"
+                alt="Atendja Feira de Santana"
+                width={800}
+                height={400}
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+
           <div className="min-w-0 shrink-0 grow-0 basis-full">
             <div className="relative w-full h-[400px]">
               <Image
