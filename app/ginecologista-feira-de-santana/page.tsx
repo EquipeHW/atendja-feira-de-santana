@@ -100,7 +100,7 @@ export default function GinecologistaPage() {
               </Link>
             </nav>
             <Button className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-6">
-              <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20uma%20ginecologista." target="_blank" rel="noopener noreferrer">
                 AGENDAR CONSULTA
               </a>
             </Button>
@@ -130,7 +130,7 @@ export default function GinecologistaPage() {
               Consultas e procedimentos em um só lugar.
             </p>
             <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-              <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20uma%20ginecologista." target="_blank" rel="noopener noreferrer">
                 📱 Agende sua consulta pelo WhatsApp
               </a>
             </Button>
@@ -160,8 +160,8 @@ export default function GinecologistaPage() {
                 Todos os procedimentos são realizados no mesmo local, com equipamentos modernos e equipe especializada.
               </p>
               <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-                <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
-                   Agende sua consulta ginecológica
+                <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20uma%20ginecologista." target="_blank" rel="noopener noreferrer">
+                  Agende sua consulta ginecológica
                 </a>
               </Button>
             </div>
@@ -283,7 +283,9 @@ export default function GinecologistaPage() {
 
           <div className="text-center mt-8">
             <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-               Agende seu procedimento ginecológico
+              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20uma%20ginecologista." target="_blank" rel="noopener noreferrer">
+                Agende seu procedimento ginecológico
+              </a>
             </Button>
           </div>
         </div>
@@ -359,7 +361,9 @@ export default function GinecologistaPage() {
             doenças ginecológicas.
           </p>
           <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-             Agende sua consulta pelo WhatsApp
+            <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20uma%20ginecologista." target="_blank" rel="noopener noreferrer">
+              Agende sua consulta pelo WhatsApp
+            </a>
           </Button>
         </div>
       </section>

@@ -100,7 +100,7 @@ export default function UltrassomPage() {
               </Link>
             </nav>
             <Button className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-6">
-              <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20exame%20de%20ultrassom." target="_blank" rel="noopener noreferrer">
                 AGENDAR EXAME
               </a>
             </Button>
@@ -130,7 +130,7 @@ export default function UltrassomPage() {
               Resultados rápidos e precisos.
             </p>
             <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-              <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20exame%20de%20ultrassom." target="_blank" rel="noopener noreferrer">
                 📱 Agende seu exame pelo WhatsApp
               </a>
             </Button>
@@ -160,7 +160,7 @@ export default function UltrassomPage() {
                 Todos os exames são realizados com hora marcada, em ambiente confortável e com resultados rápidos.
               </p>
               <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-                <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+                <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20exame%20de%20ultrassom." target="_blank" rel="noopener noreferrer">
                   📱 Agende seu ultrassom
                 </a>
               </Button>
@@ -283,7 +283,9 @@ export default function UltrassomPage() {
 
           <div className="text-center mt-8">
             <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-              📱 Agende seu exame de ultrassom
+              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20exame%20de%20ultrassom." target="_blank" rel="noopener noreferrer">
+                📱 Agende seu exame de ultrassom
+              </a>
             </Button>
           </div>
         </div>
@@ -410,7 +412,9 @@ export default function UltrassomPage() {
             Não deixe sua saúde para depois. Faça seus exames preventivos regularmente e cuide do seu bem-estar.
           </p>
           <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-            📱 Agende pelo WhatsApp
+            <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20exame%20de%20ultrassom." target="_blank" rel="noopener noreferrer">
+              📱 Agende pelo WhatsApp
+            </a>
           </Button>
         </div>
       </section>

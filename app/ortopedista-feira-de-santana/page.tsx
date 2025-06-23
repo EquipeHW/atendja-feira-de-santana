@@ -150,7 +150,7 @@ export default function OrtopedistaPage() {
               </Link>
             </nav>
             <Button className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-6">
-              <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20um%20ortopedista." target="_blank" rel="noopener noreferrer">
                 AGENDAR CONSULTA
               </a>
             </Button>
@@ -180,7 +180,7 @@ export default function OrtopedistaPage() {
               humanizado e preço justo.
             </p>
             <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-              <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20um%20ortopedista." target="_blank" rel="noopener noreferrer">
                 📱 Agende sua consulta pelo WhatsApp
               </a>
             </Button>
@@ -211,7 +211,7 @@ export default function OrtopedistaPage() {
                 problemas simples até casos mais complexos.
               </p>
               <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-                <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+                <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20um%20ortopedista." target="_blank" rel="noopener noreferrer">
                   📱 Agende sua consulta ortopédica
                 </a>
               </Button>
@@ -302,7 +302,7 @@ export default function OrtopedistaPage() {
 
           <div className="text-center mt-8">
             <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-              <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20um%20ortopedista." target="_blank" rel="noopener noreferrer">
                 📱 Agende sua consulta ortopédica
               </a>
             </Button>
@@ -391,7 +391,7 @@ export default function OrtopedistaPage() {
             qualidade de movimento.
           </p>
           <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-            <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+            <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20um%20ortopedista." target="_blank" rel="noopener noreferrer">
               📱 Agende sua consulta pelo WhatsApp
             </a>
           </Button>
