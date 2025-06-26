@@ -124,7 +124,7 @@ export default function DermatologistaPage() {
               </Link>
             </nav>
             <Button className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-6">
-              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%20sobre%20dermatologista%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20sobre%20a%20dermatologia%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%2C%20por%20favor." target="_blank" rel="noopener noreferrer">
                 AGENDAR CONSULTA
               </a>
             </Button>
@@ -154,7 +154,7 @@ export default function DermatologistaPage() {
               preço justo.
             </p>
             <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%20sobre%20dermatologista%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20sobre%20a%20dermatologia%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%2C%20por%20favor." target="_blank" rel="noopener noreferrer">
                 📱 Agende sua consulta pelo WhatsApp
               </a>
             </Button>
@@ -185,7 +185,7 @@ export default function DermatologistaPage() {
                 problemas simples até casos mais complexos.
               </p>
               <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-                <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%20sobre%20dermatologista%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
+                <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20sobre%20a%20dermatologia%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%2C%20por%20favor." target="_blank" rel="noopener noreferrer">
                   📱 Agende sua consulta dermatológica
                 </a>
               </Button>
@@ -276,7 +276,7 @@ export default function DermatologistaPage() {
 
           <div className="text-center mt-8">
             <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%20sobre%20dermatologista%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20sobre%20a%20dermatologia%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%2C%20por%20favor." target="_blank" rel="noopener noreferrer">
                 📱 Agende sua consulta dermatológica
               </a>
             </Button>
@@ -447,8 +447,8 @@ export default function DermatologistaPage() {
             Não deixe para cuidar da sua pele apenas quando surgirem problemas. Faça check-ups regulares e previna
             doenças dermatológicas.
           </p>
-          <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
-            <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%20sobre%20dermatologista%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
+          <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
+            <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%2C%20sobre%20a%20dermatologia%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%2C%20por%20favor." target="_blank" rel="noopener noreferrer">
               📱 Agende sua consulta pelo WhatsApp
             </a>
           </Button>
