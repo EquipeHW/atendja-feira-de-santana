@@ -168,19 +168,24 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Top Bar */}
-      <div className="bg-[#8dbf44] text-white py-2 px-4">
-        <div className="container mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-1">
-              <Phone className="h-4 w-4" />
-              <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
+      <div className="bg-[#8dbf44] text-white py-2 px-4 relative">
+        <div className="container mx-auto flex flex-row items-center justify-between text-xs md:text-lg">
+          {/* Esquerda */}
+          <div className="flex-1 flex items-center justify-start min-w-0">
+            <div className="flex items-center space-x-1 truncate">
+              <Phone className="h-4 w-4 min-w-4" />
+              <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200 truncate">
                 <span>(75) 3026‑8494</span>
               </a>
             </div>
           </div>
-          <div className="flex items-center space-x-4">
-            <span>@atendjafeiradesantana</span>
-            <span>Atend Já Feira de Santana</span>
+          {/* Centro */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center whitespace-nowrap text-xs md:text-lg">
+            <span className="pr-8">@atendjafeiradesantana</span>
+          </div>
+          {/* Direita */}
+          <div className="flex-1 flex items-center justify-end min-w-0">
+            <span className="truncate">Atend Já Feira de Santana</span>
           </div>
         </div>
       </div>
@@ -230,12 +235,11 @@ export default function HomePage() {
         </div>
         <div className="container mx-auto relative z-10">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-2xl md:text-6xl font-bold mb-4 md:mb-6">
               Atend Já
-              <br />
-              <span className="text-[#8dbf44]">Feira de Santana</span>
+              <span className="block md:inline text-[#8dbf44]"> Feira de Santana</span>
             </h1>
-            <p className="text-lg mb-8 leading-relaxed">
+            <p className="text-base md:text-lg mb-6 md:mb-8 leading-relaxed">
               Atendimento médico acessível e humanizado, consultas e exames em um só lugar.
             </p>
             <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold px-8 py-3">
