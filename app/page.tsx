@@ -237,7 +237,7 @@ export default function HomePage() {
           />
         </div>
         <div className="container mx-auto relative z-10">
-          <div className="max-w-2xl text-left">
+          <div className="max-w-2xl text-left md:text-left">
             <h1 className="text-2xl md:text-6xl font-bold mb-4 md:mb-6">
               Atend Já
               <span className="block md:inline text-[#8dbf44]"> Feira de Santana</span>
@@ -248,7 +248,7 @@ export default function HomePage() {
             <div>
               <Button className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold px-4 py-2 text-sm md:px-16 md:py-7 md:text-3xl">
                 <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
-                  Agende sua consulta pelo WhatsApp
+                  AGENDE SUA CONSULTA PELO WHATSAPP
                 </a>
               </Button>
             </div>
