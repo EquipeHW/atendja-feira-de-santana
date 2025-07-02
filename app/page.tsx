@@ -169,7 +169,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       {/* Top Bar */}
       <div className="bg-[#8dbf44] text-white py-2 px-4 relative">
-        <div className="container mx-auto flex flex-row items-center justify-between text-[6px] md:text-lg">
+        <div className="container mx-auto flex flex-row items-center justify-between text-lg md:text-2xl">
           {/* Esquerda */}
           <div className="flex-1 flex items-center justify-start min-w-0">
             <div className="flex items-center space-x-1 truncate">
@@ -179,13 +179,16 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          {/* Centro */}
-          <div className="flex-1 flex items-center justify-center whitespace-nowrap">
+          {/* Centro (desktop) */}
+          <div className="hidden md:flex flex-1 items-center justify-center whitespace-nowrap">
             <span className="pr-8">@atendjafeiradesantana</span>
           </div>
           {/* Direita */}
           <div className="flex-1 flex items-center justify-end min-w-0">
-            <span className="truncate">Atend Já Feira de Santana</span>
+            {/* Mobile: @atendjafeiradesantana na direita */}
+            <span className="truncate md:hidden">@atendjafeiradesantana</span>
+            {/* Desktop: Atend Já Feira de Santana na direita */}
+            <span className="truncate hidden md:inline">Atend Já Feira de Santana</span>
           </div>
         </div>
       </div>
@@ -234,7 +237,7 @@ export default function HomePage() {
           />
         </div>
         <div className="container mx-auto relative z-10">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl mx-auto text-left md:text-center">
             <h1 className="text-2xl md:text-6xl font-bold mb-4 md:mb-6">
               Atend Já
               <span className="block md:inline text-[#8dbf44]"> Feira de Santana</span>
@@ -242,11 +245,13 @@ export default function HomePage() {
             <p className="text-base md:text-lg mb-6 md:mb-8 leading-relaxed">
               Atendimento médico acessível e humanizado, consultas e exames em um só lugar.
             </p>
-            <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold px-8 py-3">
-              <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
-                AGENDAR CONSULTA
-              </a>
-            </Button>
+            <div className="md:flex md:justify-center">
+              <Button className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold px-4 py-2 text-base md:px-10 md:py-5 md:text-2xl">
+                <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+                  CLIQUE AQUI PARA AGENDAR SUA CONSULTA PELO WHATSAPP
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
