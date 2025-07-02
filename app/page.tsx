@@ -169,7 +169,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       {/* Top Bar */}
       <div className="bg-[#8dbf44] text-white py-2 px-4 relative">
-        <div className="container mx-auto flex flex-row items-center justify-between text-xs md:text-lg">
+        <div className="container mx-auto flex flex-row items-center justify-between text-[9px] md:text-lg">
           {/* Esquerda */}
           <div className="flex-1 flex items-center justify-start min-w-0">
             <div className="flex items-center space-x-1 truncate">
@@ -180,7 +180,7 @@ export default function HomePage() {
             </div>
           </div>
           {/* Centro */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center whitespace-nowrap text-xs md:text-lg">
+          <div className="flex-1 flex items-center justify-center whitespace-nowrap">
             <span className="pr-8">@atendjafeiradesantana</span>
           </div>
           {/* Direita */}
