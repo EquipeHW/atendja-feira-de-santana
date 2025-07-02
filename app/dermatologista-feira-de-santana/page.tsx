@@ -78,7 +78,7 @@ export default function DermatologistaPage() {
     <div className="min-h-screen bg-white">
       {/* Top Bar */}
       <div className="bg-[#8dbf44] text-white py-2 px-4">
-        <div className="container mx-auto flex justify-between items-center text-sm">
+        <div className="container mx-auto flex justify-between items-center text-sm md:text-lg">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <Phone className="h-4 w-4" />
@@ -88,8 +88,10 @@ export default function DermatologistaPage() {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <span>@atendjafeiradesantana</span>
-            <span>Atend Já Feira de Santana</span>
+            {/* Mobile: @atendjafeiradesantana */}
+            <span className="md:hidden">@atendjafeiradesantana</span>
+            {/* Desktop: Atend Já Feira de Santana */}
+            <span className="hidden md:inline">Atend Já Feira de Santana</span>
           </div>
         </div>
       </div>

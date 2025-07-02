@@ -169,7 +169,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       {/* Top Bar */}
       <div className="bg-[#8dbf44] text-white py-2 px-4 relative">
-        <div className="container mx-auto flex flex-row items-center justify-between text-lg md:text-lg">
+        <div className="container mx-auto flex flex-row items-center justify-between text-sm md:text-lg">
           {/* Esquerda */}
           <div className="flex-1 flex items-center justify-start min-w-0">
             <div className="flex items-center space-x-1 truncate">
@@ -237,7 +237,7 @@ export default function HomePage() {
           />
         </div>
         <div className="container mx-auto relative z-10">
-          <div className="max-w-2xl mx-auto text-left md:text-center">
+          <div className="max-w-2xl text-left">
             <h1 className="text-2xl md:text-6xl font-bold mb-4 md:mb-6">
               Atend Já
               <span className="block md:inline text-[#8dbf44]"> Feira de Santana</span>
@@ -245,10 +245,10 @@ export default function HomePage() {
             <p className="text-base md:text-lg mb-6 md:mb-8 leading-relaxed">
               Atendimento médico acessível e humanizado, consultas e exames em um só lugar.
             </p>
-            <div className="md:flex md:justify-center">
+            <div>
               <Button className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold px-4 py-2 text-sm md:px-16 md:py-7 md:text-3xl">
                 <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
-                  CLIQUE AQUI PARA AGENDAR SUA CONSULTA PELO WHATSAPP
+                  Agende sua consulta pelo WhatsApp
                 </a>
               </Button>
             </div>
