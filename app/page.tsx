@@ -246,8 +246,8 @@ export default function HomePage() {
               Atendimento médico acessível e humanizado, consultas e exames em um só lugar.
             </p>
             <div className="md:flex md:justify-center">
-              <Button className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold px-4 py-2 text-base md:px-16 md:py-7 md:text-3xl mx-auto">
-                <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer" className="block">
+              <Button className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold px-4 py-2 text-sm md:px-16 md:py-7 md:text-3xl">
+                <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
                   CLIQUE AQUI PARA AGENDAR SUA CONSULTA PELO WHATSAPP
                 </a>
               </Button>
