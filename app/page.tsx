@@ -169,7 +169,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       {/* Top Bar */}
       <div className="bg-[#8dbf44] text-white py-2 px-4 relative">
-        <div className="container mx-auto flex flex-row items-center justify-between text-lg md:text-2xl">
+        <div className="container mx-auto flex flex-row items-center justify-between text-lg md:text-lg">
           {/* Esquerda */}
           <div className="flex-1 flex items-center justify-start min-w-0">
             <div className="flex items-center space-x-1 truncate">
@@ -181,12 +181,12 @@ export default function HomePage() {
           </div>
           {/* Centro (desktop) */}
           <div className="hidden md:flex flex-1 items-center justify-center whitespace-nowrap">
-            <span className="pr-8">@atendjafeiradesantana</span>
+            <a href="https://www.instagram.com/atendjafeiradesantana/" target="_blank" rel="noopener noreferrer" className="pr-8 hover:underline">@atendjafeiradesantana</a>
           </div>
           {/* Direita */}
           <div className="flex-1 flex items-center justify-end min-w-0">
             {/* Mobile: @atendjafeiradesantana na direita */}
-            <span className="truncate md:hidden">@atendjafeiradesantana</span>
+            <a href="https://www.instagram.com/atendjafeiradesantana/" target="_blank" rel="noopener noreferrer" className="truncate md:hidden hover:underline">@atendjafeiradesantana</a>
             {/* Desktop: Atend Já Feira de Santana na direita */}
             <span className="truncate hidden md:inline">Atend Já Feira de Santana</span>
           </div>
@@ -246,8 +246,8 @@ export default function HomePage() {
               Atendimento médico acessível e humanizado, consultas e exames em um só lugar.
             </p>
             <div className="md:flex md:justify-center">
-              <Button className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold px-4 py-2 text-base md:px-10 md:py-5 md:text-2xl">
-                <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold px-4 py-2 text-base md:px-16 md:py-7 md:text-3xl mx-auto">
+                <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer" className="block">
                   CLIQUE AQUI PARA AGENDAR SUA CONSULTA PELO WHATSAPP
                 </a>
               </Button>
