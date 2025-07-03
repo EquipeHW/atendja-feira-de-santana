@@ -217,7 +217,7 @@ export default function HomePage() {
                 CONTATO
               </Link>
             </nav>
-            <Button className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-6">
+            <Button className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-bold text-base md:text-lg px-6">
               <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
                 <svg className="w-[72px] h-[72px] md:w-[96px] md:h-[96px] ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><g><circle cx="16" cy="16" r="16" fill="#fff"/><path d="M16 6C10.477 6 6 10.477 6 16c0 1.624.43 3.162 1.18 4.48L6 26l5.68-1.18A9.96 9.96 0 0 0 16 26c5.523 0 10-4.477 10-10S21.523 6 16 6zm0 18c-1.47 0-2.84-.4-4.01-1.09l-.29-.17-3.37.7.7-3.28-.19-.3A7.97 7.97 0 0 1 8 16c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.29-5.38c-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.51.12-.15.23-.59.75-.72.9-.13.15-.27.17-.5.06-.23-.12-.97-.36-1.85-1.13-.68-.6-1.14-1.34-1.28-1.56-.13-.23-.01-.35.1-.46.1-.1.23-.27.34-.41.11-.14.15-.24.23-.39.08-.15.04-.28-.02-.39-.06-.12-.5-1.19-.68-1.63-.18-.44-.36-.38-.5-.39-.13-.01-.28-.01-.43-.01-.15 0-.39.06-.59.28-.2.22-.77.75-.77 1.82 0 1.07.78 2.1.89 2.25.11.15 1.53 2.47 3.7 3.2.52.17.92.27 1.23.34.52.11.99.1 1.36.06.41-.05 1.28-.52 1.46-1.03.18-.51.18-.95.13-1.04-.05-.09-.23-.15-.46-.27z" fill="#25D366"/></g></svg>
                 AGENDAR CONSULTA
@@ -249,7 +249,7 @@ export default function HomePage() {
             <div>
               <Button asChild className="w-full bg-[#a3d65c] text-white font-extrabold text-base md:text-3xl rounded-xl px-4 py-8 text-center">
                 <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
-                  clique aqui e agende sua consulta pelo whatsapp
+                  Clique aqui e agende sua consulta pelo whatsapp
                 </a>
               </Button>
             </div>
@@ -321,7 +321,7 @@ export default function HomePage() {
 
          
           <div className="text-center">
-            <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
+            <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold text-base md:text-lg px-8 py-3">
               <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
                 AGENDAR EXAME
               </a>
@@ -357,7 +357,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-bold px-8 py-3">
+            <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-bold text-base md:text-lg px-8 py-3">
               <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
                 AGENDAR CONSULTA
               </a>
@@ -399,7 +399,7 @@ export default function HomePage() {
                 Aqui, o paciente paga apenas pelos serviços que usar, sem mensalidades ou planos. Tudo para garantir
                 rapidez, eficiência e respeito.
               </p>
-              <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
+              <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-bold text-base md:text-lg px-8 py-3">
                 <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
                   AGENDAR CONSULTA
                 </a>
@@ -450,7 +450,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-bold px-8 py-3">
+            <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-bold text-base md:text-lg px-8 py-3">
               <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
                 AGENDAR CONSULTA
               </a>
@@ -481,7 +481,7 @@ export default function HomePage() {
               <p>Atend Já Feira de Santana</p>
             </div>
           </div>
-          <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold px-8 py-3">
+          <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold text-base md:text-lg px-8 py-3">
             <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
               AGENDAR CONSULTA
             </a>

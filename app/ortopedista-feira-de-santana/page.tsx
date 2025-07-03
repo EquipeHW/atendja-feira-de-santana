@@ -151,7 +151,7 @@ export default function OrtopedistaPage() {
                 CONTATO
               </Link>
             </nav>
-            <Button className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-6">
+            <Button className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-bold text-base md:text-lg px-6">
               <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%20sobre%20ortopedista%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
                 AGENDAR CONSULTA
               </a>
@@ -181,7 +181,7 @@ export default function OrtopedistaPage() {
               Tratamento especializado para dores articulares, problemas na coluna e lesões musculares com atendimento
               humanizado e preço justo.
             </p>
-            <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
+            <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold text-base md:text-lg px-8 py-3">
               <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%20sobre%20ortopedista%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
                 📱 Agende sua consulta pelo WhatsApp
               </a>
@@ -212,7 +212,7 @@ export default function OrtopedistaPage() {
                 Nossos ortopedistas são especializados no diagnóstico e tratamento de diversas condições, desde
                 problemas simples até casos mais complexos.
               </p>
-              <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
+              <Button size="lg" className="bg-[#008b47] hover:bg-[#2ea55c] text-white font-bold text-base md:text-lg px-8 py-3">
                 <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%20sobre%20ortopedista%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
                   📱 Agende sua consulta ortopédica
                 </a>
@@ -303,7 +303,7 @@ export default function OrtopedistaPage() {
           </div>
 
           <div className="text-center mt-8">
-            <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
+            <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold text-base md:text-lg px-8 py-3">
               <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%20sobre%20ortopedista%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
                 📱 Agende sua consulta ortopédica
               </a>
@@ -392,7 +392,7 @@ export default function OrtopedistaPage() {
             Agende uma consulta com nossos ortopedistas e dê o primeiro passo para uma vida sem dores e com mais
             qualidade de movimento.
           </p>
-          <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-medium px-8 py-3">
+          <Button size="lg" className="bg-[#8dbf44] hover:bg-[#2ea55c] text-white font-bold text-base md:text-lg px-8 py-3">
             <a href="https://api.whatsapp.com/send?phone=557530268494&text=Ol%C3%A1%20sobre%20ortopedista%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
               📱 Agende sua consulta pelo WhatsApp
             </a>
