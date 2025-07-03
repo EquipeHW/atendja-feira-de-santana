@@ -249,7 +249,7 @@ export default function HomePage() {
             <div>
               <Button asChild className="w-full bg-[#a3d65c] text-white font-extrabold text-base md:text-3xl rounded-xl px-4 py-8 text-center">
                 <a href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
-                  Clique aqui pra agendar
+                  Clique aqui e agende sua consulta
                 </a>
               </Button>
             </div>
