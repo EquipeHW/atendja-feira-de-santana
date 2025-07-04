@@ -192,33 +192,33 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-
+      
       {/* Header */}
       <header className="bg-white shadow-sm border-b py-4">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              {/* Logo maior no mobile */}
-              <img
-                src="/atendja.png?height=60&width=200"
-                alt="Atend Já Logo"
-                className="h-20 md:h-14" // h-20 para mobile, h-14 para desktop
-              />
+              <Link href="/">
+                <img src="/atendja.png?height=60&width=200" alt="Atend Já Logo" className="h-14" />
+              </Link>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <Link href="#home" className="text-gray-700 hover:text-[#008b47] font-medium transition-colors">
+              <Link href="/" className="text-gray-700 hover:text-[#008b47] font-medium transition-colors">
                 HOME
               </Link>
-              <Link href="#especialidades" className="text-gray-700 hover:text-[#008b47] font-medium transition-colors">
+              <Link
+                href="/#especialidades"
+                className="text-gray-700 hover:text-[#008b47] font-medium transition-colors"
+              >
                 ESPECIALIDADES
               </Link>
-              <Link href="#diferenciais" className="text-gray-700 hover:text-[#008b47] font-medium transition-colors">
+              <Link href="/#diferenciais" className="text-gray-700 hover:text-[#008b47] font-medium transition-colors">
                 DIFERENCIAIS
               </Link>
-              <Link href="#sobre" className="text-gray-700 hover:text-[#008b47] font-medium transition-colors">
+              <Link href="/#sobre" className="text-gray-700 hover:text-[#008b47] font-medium transition-colors">
                 SOBRE
               </Link>
-              <Link href="#contato" className="text-gray-700 hover:text-[#008b47] font-medium transition-colors">
+              <Link href="/#contato" className="text-gray-700 hover:text-[#008b47] font-medium transition-colors">
                 CONTATO
               </Link>
             </nav>
